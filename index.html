@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CuteAds - Resource Pack Download</title>
+  <style>
+    *{
+        -webkit-tap-highlight-color: transparent;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('wallpaper.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .top-ads {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 600px;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+
+    details {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .btn-group button,
+    button {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      padding: 10px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .btn-group button:hover,
+    .btn-group button.active,
+    button:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    #progress {
+      height: 10px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      margin-top: 10px;
+      overflow: hidden;
+      display: none;
+    }
+
+    #bar {
+      height: 100%;
+      width: 0%;
+      background: #4caf50;
+      transition: width 0.3s ease;
+    }
+
+    #scrollNotice {
+      display: none;
+      margin-top: 20px;
+      font-weight: bold;
+      text-shadow: 0 0 8px #4caf50;
+    }
+
+    #downloadLink {
+      margin-top: 60px;
+      display: none;
+      background: #4caf50;
+      padding: 14px 30px;
+      border-radius: 12px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+      box-shadow: 0 0 12px #4caf50;
+    }
+
+    .ads {
+      margin: 40px auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+
+
+
+
+<!-- ads starts here -->
+
+
+
+
+
+
+  <div class="ads top-ads">
+    <script type='text/javascript' src='//accommodateyours.com/6f/58/44/6f5844cd0d6ec425c191a94ba55753cc.js'></script>
+
+
+
+
+
+    <script async="async" data-cfasync="false" src="//accommodateyours.com/d807d44645790205f2919e2c75a775ed/invoke.js"></script>
+    <div id="container-d807d44645790205f2919e2c75a775ed"></div>
+
+    <!-- 2 -->
+     <script type="text/javascript">
+	atOptions = {
+		'key' : '932b61e77d13413d00bb3282c7d299fd',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//accommodateyours.com/932b61e77d13413d00bb3282c7d299fd/invoke.js"></script>
+
+<!-- 3 -->
+ <script type="text/javascript">
+	atOptions = {
+		'key' : '84fb74c0952fa9836e73d0ba60a6773b',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//accommodateyours.com/84fb74c0952fa9836e73d0ba60a6773b/invoke.js"></script>
+  </div>
+
+
+
+
+
+<!-- ads ends here -->
+
+
+
+
+
+
+  <div class="container glass">
+    <h1>CuteAds - Download Your Pack</h1>
+    <h5>
+        Ads are for the creator's revenue! Please don't click anywhere just build the resource pack and download it.
+    </h5>
+    <input type="text" id="fileName" style="width: 95%;" placeholder="Demon's Nation of Realism" required>
+
+    <details>
+      <summary>Extension</summary>
+      <div class="btn-group">
+        <button onclick="setExtension('zip', this)">Zip</button>
+        <button onclick="setExtension('mcpack', this)">Mcpack</button>
+      </div>
+    </details>
+
+    <details>
+      <summary>Build Target</summary>
+      <div class="btn-group">
+        <button onclick="setTarget(0, this)">1024x</button>
+        <button onclick="setTarget(1, this)">512x</button>
+        <button onclick="setTarget(2, this)">256x</button>
+        <button onclick="setTarget(3, this)">PBR</button>
+        <button onclick="setTarget(4, this)">POM</button>
+        <button onclick="setTarget(5, this)">mcpe-1024x</button>
+      </div>
+    </details>
+
+    <button onclick="setDefaults()">Defaults</button>
+    <button onclick="startBuild()">Build</button>
+
+    <div id="progress"><div id="bar"></div></div>
+    <div id="scrollNotice">Please scroll down to get the build download link</div>
+  </div>
+
+
+
+
+
+
+<!-- ads starts here -->
+
+
+
+
+
+
+
+<div class="ads">
+ <script type="text/javascript">
+	atOptions = {
+		'key' : '7a09d845cb15826bf5647232b958095e',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//accommodateyours.com/7a09d845cb15826bf5647232b958095e/invoke.js"></script>
+<br>
+<br>
+
+ <script type="text/javascript">
+	atOptions = {
+		'key' : '7a09d845cb15826bf5647232b958095e',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//accommodateyours.com/7a09d845cb15826bf5647232b958095e/invoke.js"></script>
+<br>
+<br>
+
+ <script type="text/javascript">
+	atOptions = {
+		'key' : '7a09d845cb15826bf5647232b958095e',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//accommodateyours.com/7a09d845cb15826bf5647232b958095e/invoke.js"></script>
+<br>
+<br>
+
+<!-- 5 -->
+
+<div style="display: flex;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'c83e5d43275b5d34fbc5154905dd2fc5',
+		'format' : 'iframe',
+		'height' : 600,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//accommodateyours.com/c83e5d43275b5d34fbc5154905dd2fc5/invoke.js"></script>
+<br>
+<br>
+
+<!-- 6 -->
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'c83e5d43275b5d34fbc5154905dd2fc5',
+		'format' : 'iframe',
+		'height' : 600,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//accommodateyours.com/c83e5d43275b5d34fbc5154905dd2fc5/invoke.js"></script>
+<br>
+<br><script type="text/javascript">
+	atOptions = {
+		'key' : 'c83e5d43275b5d34fbc5154905dd2fc5',
+		'format' : 'iframe',
+		'height' : 600,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//accommodateyours.com/c83e5d43275b5d34fbc5154905dd2fc5/invoke.js"></script>
+<br>
+<br>
+</div>
+
+
+<!-- 7 -->
+<div>
+     <script type="text/javascript">
+	atOptions = {
+		'key' : 'e37a668bef659f1459ab15a9f0d95fbd',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//accommodateyours.com/e37a668bef659f1459ab15a9f0d95fbd/invoke.js"></script>
+  </div>
+<br>
+<br>
+
+ <script type="text/javascript">
+	atOptions = {
+		'key' : 'e37a668bef659f1459ab15a9f0d95fbd',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//accommodateyours.com/e37a668bef659f1459ab15a9f0d95fbd/invoke.js"></script>
+  </div>
+<br>
+<br>
+
+ <script type="text/javascript">
+	atOptions = {
+		'key' : 'e37a668bef659f1459ab15a9f0d95fbd',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//accommodateyours.com/e37a668bef659f1459ab15a9f0d95fbd/invoke.js"></script>
+  </div>
+<br>
+<br>
+</div>
+
+
+
+
+
+
+
+<!-- ads ends here -->
+
+
+
+
+
+  <a id="downloadLink" download></a>
+<br>
+<br>
+
+  <script>
+    const fileNameInput = document.getElementById('fileName');
+    const downloadLink = document.getElementById('downloadLink');
+    const scrollNotice = document.getElementById('scrollNotice');
+    const progress = document.getElementById('progress');
+    const bar = document.getElementById('bar');
+
+    let selectedExt = 'zip';
+    let selectedTargetIndex = 0;
+
+    const links = [
+      "https://github.com/goblimos/demon-nation-realism/archive/refs/heads/main.zip",
+      "https://github.com/goblimos/demon-nation-realism-512x/archive/refs/heads/main.zip",
+      "https://github.com/goblimos/demon-nation-realism-256x/archive/refs/heads/main.zip",
+      "https://github.com/goblimos/demon-nation-realism-pbr/archive/refs/heads/main.zip",
+      "https://github.com/goblimos/demon-nation-realism-pom/archive/refs/heads/main.zip"
+    ];
+
+    function setExtension(ext, btn) {
+      selectedExt = ext;
+      updateActive(btn);
+    }
+
+    function setTarget(index, btn) {
+      selectedTargetIndex = index;
+      updateActive(btn);
+    }
+
+    function updateActive(btn) {
+      const group = btn.parentElement;
+      [...group.children].forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    function setDefaults() {
+      fileNameInput.value = "Demon's Nation Of Realism - 1024x Rolling Release";
+      selectedExt = 'zip';
+      selectedTargetIndex = 0;
+      document.querySelectorAll('.btn-group')[0].children[0].classList.add('active');
+      document.querySelectorAll('.btn-group')[1].children[0].classList.add('active');
+    }
+
+    function generateDownload() {
+      if (selectedTargetIndex < 0 || selectedTargetIndex >= links.length) {
+        alert("Build target not available.");
+        return;
+      }
+      const link = links[selectedTargetIndex];
+      const name = fileNameInput.value.trim();
+      const finalName = `${name}.${selectedExt}`;
+
+      downloadLink.href = link;
+      downloadLink.download = finalName;
+      downloadLink.textContent = `Download ${finalName}`;
+      downloadLink.style.display = 'inline-block';
+      scrollNotice.style.display = 'block';
+    }
+
+    function startBuild() {
+      if (!fileNameInput.value.trim()) {
+        alert("Please enter a file name.");
+        return;
+      }
+      progress.style.display = 'block';
+      bar.style.width = '0%';
+      downloadLink.style.display = 'none';
+      scrollNotice.style.display = 'none';
+
+      let progressVal = 0;
+      const increment = 100 / 10;
+      const interval = setInterval(() => {
+        if (progressVal < 100) {
+          progressVal += increment;
+          bar.style.width = progressVal + '%';
+        }
+      }, 1000);
+
+      const delay = 10000 + Math.floor(Math.random() * 2001 + 1000);
+
+      setTimeout(() => {
+        clearInterval(interval);
+        bar.style.width = '100%';
+        generateDownload();
+      }, delay);
+    }
+
+    window.onload = setDefaults;
+  </script>
+</body>
+</html>
